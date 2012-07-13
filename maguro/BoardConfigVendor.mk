@@ -12,12 +12,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-LOCAL_STEM := maguro/device-partial.mk
+LOCAL_STEM := maguro/BoardConfigPartial.mk
 
-$(call inherit-product-if-exists, vendor/broadcom/$(LOCAL_STEM))
-$(call inherit-product-if-exists, vendor/csr/$(LOCAL_STEM))
-$(call inherit-product-if-exists, vendor/imgtec/$(LOCAL_STEM))
-$(call inherit-product-if-exists, vendor/invensense/$(LOCAL_STEM))
-$(call inherit-product-if-exists, vendor/nxp/$(LOCAL_STEM))
-$(call inherit-product-if-exists, vendor/samsung/$(LOCAL_STEM))
-$(call inherit-product-if-exists, vendor/ti/$(LOCAL_STEM))
+-include vendor/broadcom/$(LOCAL_STEM)
+-include vendor/csr/$(LOCAL_STEM)
+-include vendor/imgtec/$(LOCAL_STEM)
+-include vendor/invensense/$(LOCAL_STEM)
+-include vendor/nxp/$(LOCAL_STEM)
+-include vendor/samsung/$(LOCAL_STEM)
+-include vendor/ti/$(LOCAL_STEM)
