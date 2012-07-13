@@ -12,12 +12,18 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-LOCAL_STEM := maguro/device-partial.mk
-
-$(call inherit-product-if-exists, vendor/samsung/maguro/broadcom/device-partial.mk)
-$(call inherit-product-if-exists, vendor/csr/$(LOCAL_STEM))
-$(call inherit-product-if-exists, vendor/samsung/maguro/imgtec/device-partial.mk)
-$(call inherit-product-if-exists, vendor/samsung/maguro/invensense/device-partial.mk)
-$(call inherit-product-if-exists, vendor/nxp/$(LOCAL_STEM))
-$(call inherit-product-if-exists, vendor/samsung/$(LOCAL_STEM))
-$(call inherit-product-if-exists, vendor/ti/$(LOCAL_STEM))
+# Imgtec blob(s) necessary for Maguro hardware
+PRODUCT_PACKAGES := \
+    pvrsrvctl \
+    libEGL_POWERVR_SGX540_120 \
+    libGLESv1_CM_POWERVR_SGX540_120 \
+    libGLESv2_POWERVR_SGX540_120 \
+    gralloc.omap4 \
+    libglslcompiler \
+    libIMGegl \
+    libpvr2d \
+    libpvrANDROID_WSEGL \
+    libPVRScopeServices \
+    libsrv_init \
+    libsrv_um \
+    libusc

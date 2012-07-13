@@ -12,12 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-LOCAL_STEM := maguro/device-partial.mk
-
-$(call inherit-product-if-exists, vendor/samsung/maguro/broadcom/device-partial.mk)
-$(call inherit-product-if-exists, vendor/csr/$(LOCAL_STEM))
-$(call inherit-product-if-exists, vendor/samsung/maguro/imgtec/device-partial.mk)
-$(call inherit-product-if-exists, vendor/samsung/maguro/invensense/device-partial.mk)
-$(call inherit-product-if-exists, vendor/nxp/$(LOCAL_STEM))
-$(call inherit-product-if-exists, vendor/samsung/$(LOCAL_STEM))
-$(call inherit-product-if-exists, vendor/ti/$(LOCAL_STEM))
+# Broadcom blob(s) necessary for Maguro hardware
+PRODUCT_PACKAGES := \
+    bcm4330
