@@ -14,6 +14,11 @@
 
 LOCAL_STEM := maguro/device-partial.mk
 
+PRODUCT_COPY_FILES += \
+vendor/samsung/maguro/proprietary/gps.omap4.so:system/vendor/lib/hw/gps.omap4.so \
+vendor/samsung/maguro/proprietary/libpn544_fw.so:system/vendor/firmware/libpn544_fw.so \
+vendor/samsung/maguro/proprietary/sirfgps.conf:system/vendor/etc/sirfgps.conf \
+
 $(call inherit-product-if-exists, vendor/samsung/maguro/broadcom/device-partial.mk)
 $(call inherit-product-if-exists, vendor/csr/$(LOCAL_STEM))
 $(call inherit-product-if-exists, vendor/samsung/maguro/imgtec/device-partial.mk)
