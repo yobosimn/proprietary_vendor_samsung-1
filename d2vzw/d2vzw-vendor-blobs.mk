@@ -1,4 +1,4 @@
-# Copyright (C) 2011 The CyanogenMod Project
+# Copyright (C) 2012 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,9 +16,9 @@
 
 # Prebuilt libraries that are needed to build open-source libraries
 PRODUCT_COPY_FILES += \
-        vendor/samsung/d2vzw/proprietary/lib/libacdbloader.so:obj/lib/libacdbloader.so \
-        vendor/samsung/d2vzw/proprietary/lib/libaudioalsa.so:obj/lib/libaudioalsa.so \
-        vendor/samsung/d2vzw/proprietary/lib/libv8.so:obj/lib/libv8.so
+	vendor/samsung/d2vzw/proprietary/lib/libacdbloader.so:obj/lib/libacdbloader.so \
+	vendor/samsung/d2vzw/proprietary/lib/libaudioalsa.so:obj/lib/libaudioalsa.so \
+	vendor/samsung/d2vzw/proprietary/lib/libv8.so:obj/lib/libv8.so
 
 PRODUCT_COPY_FILES += \
         vendor/samsung/d2vzw/proprietary/bin/bridgemgrd:system/bin/bridgemgrd \
@@ -38,8 +38,8 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/d2vzw/proprietary/bin/bcm4334_murata.hcd:system/bin/bcm4334_murata.hcd \
         vendor/samsung/d2vzw/proprietary/bin/bcm4334_semco.hcd:system/bin/bcm4334_semco.hcd \
         vendor/samsung/d2vzw/proprietary/lib/hw/alsa.msm8960.so:system/lib/hw/alsa.msm8960.so \
-        vendor/samsung/d2vzw/proprietary/lib/hw/audio.primary.msm8960.so:system/lib/hw/audio.primary.msm8960.so \
         vendor/samsung/d2vzw/proprietary/lib/hw/audio_policy.msm8960.so:system/lib/hw/audio_policy.msm8960.so \
+        vendor/samsung/d2vzw/proprietary/lib/hw/audio.primary.msm8960.so:system/lib/hw/audio.primary.msm8960.so \
         vendor/samsung/d2vzw/proprietary/lib/libacdbloader.so:system/lib/libacdbloader.so \
         vendor/samsung/d2vzw/proprietary/lib/libalsa-intf.so:system/lib/libalsa-intf.so \
         vendor/samsung/d2vzw/proprietary/lib/libaudcal.so:system/lib/libaudcal.so \
@@ -49,7 +49,6 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/d2vzw/proprietary/lib/lib_Samsung_Resampler.so:system/lib/lib_Samsung_Resampler.so \
         vendor/samsung/d2vzw/proprietary/lib/lib_SamsungRec_V01005.so:system/lib/lib_SamsungRec_V01005.so \
         vendor/samsung/d2vzw/proprietary/lib/libcontrolcsc.so:system/lib/libcontrolcsc.so \
-        vendor/samsung/d2vzw/proprietary/lib/libmm-color-convertor.so:system/lib/libmm-color-convertor.so \
         vendor/samsung/d2vzw/proprietary/lib/libmmparser.so:system/lib/libmmparser.so \
         vendor/samsung/d2vzw/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
         vendor/samsung/d2vzw/proprietary/lib/libDivxDrm.so:system/lib/libDivxDrm.so \
@@ -64,6 +63,7 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/d2vzw/proprietary/lib/libOpenVG.so:system/lib/libOpenVG.so \
         vendor/samsung/d2vzw/proprietary/lib/libsc-a2xx.so:system/lib/libsc-a2xx.so \
         vendor/samsung/d2vzw/proprietary/lib/libsc-a3xx.so:system/lib/libsc-a3xx.so \
+        vendor/samsung/d2vzw/proprietary/lib/libmm-color-convertor.so:system/lib/libmm-color-convertor.so \
         vendor/samsung/d2vzw/proprietary/bin/netmgrd:system/bin/netmgrd \
         vendor/samsung/d2vzw/proprietary/bin/sec-ril:system/bin/sec-ril \
         vendor/samsung/d2vzw/proprietary/bin/qmiproxy:system/bin/qmiproxy \
@@ -172,22 +172,9 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/d2vzw/proprietary/etc/firmware/leia_pm4_470.fw:system/etc/firmware/leia_pm4_470.fw \
         vendor/samsung/d2vzw/proprietary/etc/firmware/vidc_1080p.fw:system/etc/firmware/vidc_1080p.fw
 
-# Blobs necessary for drm
-PRODUCT_COPY_FILES +=  \
-    vendor/samsung/d2vzw/proprietary/lib/libfrsdk.so:system/lib/libfrsdk.so \
-    vendor/samsung/d2vzw/proprietary/lib/libWVphoneAPI.so:system/lib/libWVphoneAPI.so \
-    vendor/samsung/d2vzw/proprietary/lib/libwvdrm_L1.so:system/lib/libwvdrm_L1.so \
-    vendor/samsung/d2vzw/proprietary/lib/libwvm.so:system/lib/libwvm.so \
-    vendor/samsung/d2vzw/proprietary/lib/libWVStreamControlAPI_L1.so:system/lib/libWVStreamControlAPI_L1.so \
-    vendor/samsung/d2vzw/proprietary/lib/drm/libdrmwvmplugin.so:system/lib/drm/libdrmwvmplugin.so
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    drm.service.enabled=true
-
-# Proprietary VZW blobs for LTE
-
+# VZW Packages
 PRODUCT_PACKAGES += \
 	VZWAPNLib \
 	vzwapnpermission \
 	VZWAPNService
-	
+
