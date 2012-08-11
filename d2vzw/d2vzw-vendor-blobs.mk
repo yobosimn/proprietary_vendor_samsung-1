@@ -1,4 +1,4 @@
-# Copyright (C) 2012 The Android Open Source Project
+# Copyright (C) 2011 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,8 +17,7 @@
 # Prebuilt libraries that are needed to build open-source libraries
 PRODUCT_COPY_FILES += \
         vendor/samsung/d2vzw/proprietary/lib/libacdbloader.so:obj/lib/libacdbloader.so \
-        vendor/samsung/d2vzw/proprietary/lib/libaudioalsa.so:obj/lib/libaudioalsa.so \
-        vendor/samsung/d2vzw/proprietary/lib/libv8.so:obj/lib/libv8.so
+        vendor/samsung/d2vzw/proprietary/lib/libaudioalsa.so:obj/lib/libaudioalsa.so
 
 PRODUCT_COPY_FILES += \
         vendor/samsung/d2vzw/proprietary/bin/bridgemgrd:system/bin/bridgemgrd \
@@ -40,7 +39,6 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/d2vzw/proprietary/lib/hw/alsa.msm8960.so:system/lib/hw/alsa.msm8960.so \
         vendor/samsung/d2vzw/proprietary/lib/hw/audio_policy.msm8960.so:system/lib/hw/audio_policy.msm8960.so \
         vendor/samsung/d2vzw/proprietary/lib/hw/audio.primary.msm8960.so:system/lib/hw/audio.primary.msm8960.so \
-        vendor/samsung/d2vzw/proprietary/lib/hw/audio_policy.msm8960.so:system/lib/hw/audio_policy.msm8960.so \
         vendor/samsung/d2vzw/proprietary/lib/libacdbloader.so:system/lib/libacdbloader.so \
         vendor/samsung/d2vzw/proprietary/lib/libalsa-intf.so:system/lib/libalsa-intf.so \
         vendor/samsung/d2vzw/proprietary/lib/libaudcal.so:system/lib/libaudcal.so \
@@ -60,11 +58,11 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/d2vzw/proprietary/lib/egl/libGLESv2_adreno200.so:system/lib/egl/libGLESv2_adreno200.so \
         vendor/samsung/d2vzw/proprietary/lib/egl/libq3dtools_adreno200.so:system/lib/egl/libq3dtools_adreno200.so \
         vendor/samsung/d2vzw/proprietary/lib/egl/libGLESv2S3D_adreno200.so:system/lib/egl/libGLESv2S3D_adreno200.so \
+        vendor/samsung/d2vzw/proprietary/lib/libc2d2_z180.so:system/lib/libc2d2_z180.so \
         vendor/samsung/d2vzw/proprietary/lib/libgsl.so:system/lib/libgsl.so \
         vendor/samsung/d2vzw/proprietary/lib/libC2D2.so:system/lib/libC2D2.so \
         vendor/samsung/d2vzw/proprietary/lib/libOpenVG.so:system/lib/libOpenVG.so \
         vendor/samsung/d2vzw/proprietary/lib/libsc-a2xx.so:system/lib/libsc-a2xx.so \
-        vendor/samsung/d2vzw/proprietary/lib/libsc-a3xx.so:system/lib/libsc-a3xx.so \
         vendor/samsung/d2vzw/proprietary/bin/netmgrd:system/bin/netmgrd \
         vendor/samsung/d2vzw/proprietary/bin/sec-ril:system/bin/sec-ril \
         vendor/samsung/d2vzw/proprietary/bin/qmiproxy:system/bin/qmiproxy \
@@ -147,7 +145,6 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/d2vzw/proprietary/cameradata/datapattern_420sp.yuv:system/cameradata/datapattern_420sp.yuv \
         vendor/samsung/d2vzw/proprietary/cameradata/datapattern_front_420sp.yuv:system/cameradata/datapattern_front_420sp.yuv \
         vendor/samsung/d2vzw/proprietary/lib/libdiag.so:system/lib/libdiag.so \
-        vendor/samsung/d2vzw/proprietary/lib/libv8.so:system/lib/libv8.so \
         vendor/samsung/d2vzw/proprietary/bin/macloader:system/bin/macloader \
         vendor/samsung/d2vzw/proprietary/bin/brcm_poke_helper:system/bin/brcm_poke_helper \
         vendor/samsung/d2vzw/proprietary/etc/wifi/bcmdhd_apsta.bin_b1:system/etc/wifi/bcmdhd_apsta.bin_b1 \
@@ -166,12 +163,25 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/d2vzw/proprietary/etc/firmware/a225p5_pm4.fw:system/etc/firmware/a225p5_pm4.fw \
         vendor/samsung/d2vzw/proprietary/etc/firmware/a225_pfp.fw:system/etc/firmware/a225_pfp.fw \
         vendor/samsung/d2vzw/proprietary/etc/firmware/a225_pm4.fw:system/etc/firmware/a225_pm4.fw \
-        vendor/samsung/d2vzw/proprietary/etc/firmware/a300_pfp.fw:system/etc/firmware/a300_pfp.fw \
-        vendor/samsung/d2vzw/proprietary/etc/firmware/a300_pm4.fw:system/etc/firmware/a300_pm4.fw \
+        vendor/samsung/d2vzw/proprietary/etc/firmware/yamato_pfp.fw:system/etc/firmware/yamato_pfp.fw \
+        vendor/samsung/d2vzw/proprietary/etc/firmware/yamato_pm4.fw:system/etc/firmware/yamato_pm4.fw \
         vendor/samsung/d2vzw/proprietary/etc/firmware/cyttsp_8960_cdp.hex:system/etc/firmware/cyttsp_8960_cdp.hex \
         vendor/samsung/d2vzw/proprietary/etc/firmware/leia_pfp_470.fw:system/etc/firmware/leia_pfp_470.fw \
         vendor/samsung/d2vzw/proprietary/etc/firmware/leia_pm4_470.fw:system/etc/firmware/leia_pm4_470.fw \
-        vendor/samsung/d2vzw/proprietary/etc/firmware/vidc_1080p.fw:system/etc/firmware/vidc_1080p.fw
+        vendor/samsung/d2vzw/proprietary/etc/firmware/vidc_1080p.fw:system/etc/firmware/vidc_1080p.fw \
+        vendor/samsung/d2vzw/proprietary/lib/libqc-opt.so:system/lib/libqc-opt.so
+
+# Blobs necessary for drm
+PRODUCT_COPY_FILES +=  \
+    vendor/samsung/d2vzw/proprietary/lib/libfrsdk.so:system/lib/libfrsdk.so \
+    vendor/samsung/d2vzw/proprietary/lib/libWVphoneAPI.so:system/lib/libWVphoneAPI.so \
+    vendor/samsung/d2vzw/proprietary/lib/libwvdrm_L1.so:system/lib/libwvdrm_L1.so \
+    vendor/samsung/d2vzw/proprietary/lib/libwvm.so:system/lib/libwvm.so \
+    vendor/samsung/d2vzw/proprietary/lib/libWVStreamControlAPI_L1.so:system/lib/libWVStreamControlAPI_L1.so \
+    vendor/samsung/d2vzw/proprietary/lib/drm/libdrmwvmplugin.so:system/lib/drm/libdrmwvmplugin.so
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    drm.service.enabled=true
 
 # Proprietary VZW blobs for LTE
 
