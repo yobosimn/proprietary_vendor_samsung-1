@@ -162,7 +162,7 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/d2vzw/proprietary/etc/firmware/vidc_1080p.fw:system/etc/firmware/vidc_1080p.fw \
         vendor/samsung/d2vzw/proprietary/lib/libqc-opt.so:system/lib/libqc-opt.so
 
-# VZW blobs for LTE
+# Proprietary VZW blobs for LTE
 PRODUCT_PACKAGES += \
 	VZWAPNLib \
 	vzwapnpermission \
