@@ -40,6 +40,8 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/jf-common/proprietary/lib/libgsl.so:system/lib/libgsl.so \
         vendor/samsung/jf-common/proprietary/lib/libllvm-a3xx.so:system/lib/libllvm-a3xx.so \
         vendor/samsung/jf-common/proprietary/lib/libC2D2.so:system/lib/libC2D2.so \
+        vendor/samsung/jf-common/proprietary/lib/libOpenVG.so:system/lib/libOpenVG.so \
+        vendor/samsung/jf-common/proprietary/lib/libOpenCL.so:system/lib/libOpenCL.so \
         vendor/samsung/jf-common/proprietary/lib/libsc-a3xx.so:system/lib/libsc-a3xx.so \
         vendor/samsung/jf-common/proprietary/etc/firmware/a300_pfp.fw:system/etc/firmware/a300_pfp.fw \
         vendor/samsung/jf-common/proprietary/etc/firmware/a300_pm4.fw:system/etc/firmware/a300_pm4.fw \
@@ -78,6 +80,7 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/jf-common/proprietary/lib/libril-qcril-hook-oem.so:system/lib/libril-qcril-hook-oem.so \
         vendor/samsung/jf-common/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
         vendor/samsung/jf-common/proprietary/lib/libtime_genoff.so:system/lib/libtime_genoff.so \
+        vendor/samsung/jf-common/proprietary/lib/libgeofence.so:system/lib/libgeofence.so \
         vendor/samsung/jf-common/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
         vendor/samsung/jf-common/proprietary/lib/libsensirion_j1.so:system/lib/libsensirion_j1.so \
         vendor/samsung/jf-common/proprietary/lib/libsam.so:system/lib/libsam.so \
@@ -181,4 +184,5 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/jf-common/proprietary/lib/libdrmtime.so:system/lib/libdrmtime.so \
         vendor/samsung/jf-common/proprietary/lib/libhdcp2.so:system/lib/libhdcp2.so \
         vendor/samsung/jf-common/proprietary/lib/libQSEEComAPI.so:system/lib/libQSEEComAPI.so \
+        vendor/samsung/jf-common/proprietary/lib/libWVStreamControlAPI_L1.so:system/lib/libWVStreamControlAPI_L1.so \
         vendor/samsung/jf-common/proprietary/lib/libwvm.so:system/lib/libwvm.so

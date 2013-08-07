@@ -22,7 +22,6 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/d2-common/proprietary/bin/bcm4334_semco.hcd:system/bin/bcm4334_semco.hcd \
         vendor/samsung/d2-common/proprietary/lib/libacdbloader.so:system/lib/libacdbloader.so \
         vendor/samsung/d2-common/proprietary/lib/libaudcal.so:system/lib/libaudcal.so \
-        vendor/samsung/d2-common/proprietary/lib/libExtendedExtractor.so:system/lib/libExtendedExtractor.so \
         vendor/samsung/d2-common/proprietary/lib/libmmparser.so:system/lib/libmmparser.so \
         vendor/samsung/d2-common/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
         vendor/samsung/d2-common/proprietary/lib/libdivxdrm.so:system/lib/libdivxdrm.so \
@@ -32,13 +31,13 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/d2-common/proprietary/lib/egl/libGLESv2_adreno200.so:system/lib/egl/libGLESv2_adreno200.so \
         vendor/samsung/d2-common/proprietary/lib/egl/libq3dtools_adreno200.so:system/lib/egl/libq3dtools_adreno200.so \
         vendor/samsung/d2-common/proprietary/lib/egl/libGLESv2S3D_adreno200.so:system/lib/egl/libGLESv2S3D_adreno200.so \
-        vendor/samsung/d2-common/proprietary/lib/egl/libplayback_adreno200.so:system/lib/egl/libplayback_adreno200.so \
         vendor/samsung/d2-common/proprietary/lib/libc2d2_z180.so:system/lib/libc2d2_z180.so \
         vendor/samsung/d2-common/proprietary/lib/libgsl.so:system/lib/libgsl.so \
         vendor/samsung/d2-common/proprietary/lib/libC2D2.so:system/lib/libC2D2.so \
         vendor/samsung/d2-common/proprietary/lib/libOpenVG.so:system/lib/libOpenVG.so \
         vendor/samsung/d2-common/proprietary/lib/libOpenCL.so:system/lib/libOpenCL.so \
         vendor/samsung/d2-common/proprietary/lib/libsc-a2xx.so:system/lib/libsc-a2xx.so \
+        vendor/samsung/d2-common/proprietary/lib/libExtendedExtractor.so:system/lib/libExtendedExtractor.so \
         vendor/samsung/d2-common/proprietary/etc/firmware/a225p5_pm4.fw:system/etc/firmware/a225p5_pm4.fw \
         vendor/samsung/d2-common/proprietary/etc/firmware/a225_pfp.fw:system/etc/firmware/a225_pfp.fw \
         vendor/samsung/d2-common/proprietary/etc/firmware/a225_pm4.fw:system/etc/firmware/a225_pm4.fw \
@@ -73,6 +72,7 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/d2-common/proprietary/lib/libqmi_client_qmux.so:system/lib/libqmi_client_qmux.so \
         vendor/samsung/d2-common/proprietary/lib/libomission_avoidance.so:system/lib/libomission_avoidance.so \
         vendor/samsung/d2-common/proprietary/lib/libfactoryutil.so:system/lib/libfactoryutil.so \
+        vendor/samsung/d2-common/proprietary/lib/libgeofence.so:system/lib/libgeofence.so \
         vendor/samsung/d2-common/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
         vendor/samsung/d2-common/proprietary/lib/hw/nfc.MSM8960.so:system/lib/hw/nfc.MSM8960.so \
         vendor/samsung/d2-common/proprietary/lib/hw/sensors.msm8960.so:system/lib/hw/sensors.msm8960.so \
